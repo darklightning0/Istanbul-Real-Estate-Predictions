@@ -1,11 +1,9 @@
-
 import streamlit as st
 import pandas as pd
 import tensorflow as tf
 import numpy as np
 
 data = pd.read_csv('./datasets/model_input_dataset.csv')
-
 model = tf.keras.models.load_model('./model_final.keras')
 
 price_min = 20000
@@ -50,5 +48,15 @@ df['FloorLocation'] = df['FloorLocation'].apply(lambda x: list(flocs.keys())[lis
 
 prediction = model.predict(df.values)
 
-st.subheader('Predicted Price')
-st.write(f'The predicted price is: {prediction[0][0] * (price_max - price_min) + price_min:,.2f} TL')
+st.markdown(
+    f"""
+    <div style="display: flex;">
+        <div style="background-color: #34495e; padding: 2rem; border-radius: 15px; box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);">
+            <h2 style="font-size: 2.5rem; color: #ecf0f1;">Predicted Price</h2>
+            <p style="font-size: 2rem; color: #ecf0f1; margin-top: 1rem;">
+                The predicted price is: <span style="color: #B0E57C;">{prediction[0][0] * (price_max - price_min) + price_min:,.2f} TL</span>
+            </p>
+        </div>
+    </div>
+    """, unsafe_allow_html=True
+)
