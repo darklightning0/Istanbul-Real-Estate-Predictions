@@ -1,6 +1,6 @@
 # Real Estate Price Prediction Project
 
-This project aims to predict real estate prices using a machine learning model built with TensorFlow. The application not only predicts prices but also provides users with a frontend for interacting with the data.
+This project aims to predict real estate prices in Istanbul using a machine learning model built with TensorFlow. The application not only predicts prices but also provides users with a frontend for interacting with the data.
 
 ![image 1](images/img1.png)
 
