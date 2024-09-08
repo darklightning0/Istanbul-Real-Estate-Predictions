@@ -39,6 +39,10 @@ The project includes a user-friendly frontend, which is designed for real estate
 
 The frontend provides a seamless experience for interacting with the model and understanding how various property features influence the predicted price.
 
+## Acknowledgments
+
+This project was completed during my internship at [ARDICTECH](https://www.ardictech.com/), and I would like to express my deep gratitude for their support and guidance throughout the process. I would also like to thank [Mirza Atlı](https://mirza.town/) for his unwavering mentorship and continuous encouragement during my internship. His expertise and guidance have been invaluable to the success of this project.
+
 ## License
 
 This project is licensed under the AGPL-3.0 License - see the LICENSE file for details.
